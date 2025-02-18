@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e1ca7ec5-f332-4a52-8abd-a66093d66f91}</ProjectGuid>
+    <RootNamespace>external kernel base</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Shadow</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\x64\Release</OutDir>
+    <IntDir>..\x64\ddd</IntDir>
+    <IncludePath>C:\Users\koda\Downloads\bbolt remake v1\src\thirdparty\FreeType\include;C:\Users\moonp\Downloads\stf\include\SDK\Include;C:\Users\koda\Downloads\bbolt remake v1\src\thirdparty\FreeType\include\freetype;C:\Users\koda\Downloads\bbolt remake v1\src\thirdparty\Microsoft DirectX SDK\Include;C:\Users\koda\Downloads\thirdparty\freetype\include;C:\Users\koda\Downloads\thirdparty\dxsdk\Include;C:\Users\iphon\Desktop\roblox\Mirage External\mirage\src\include\env;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\iphon\Desktop\roblox\Mirage External\mirage\src\include\s_auth;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\moonp\Downloads\stf\include\freetype\win64;C:\Users\moonp\Downloads\stf\include\SDK\Lib\x64;C:\Users\iphon\Desktop\roblox\Mirage External\mirage\src\lib;C:\Users\iphon\Desktop\roblox\Mirage External\mirage\src\include\framework;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;C:\Users\koda\Downloads\bbolt remake v1\src\thirdparty\Microsoft DirectX SDK\Lib\x64;C:\Users\koda\Downloads\bbolt remake v1\src\thirdparty\FreeType\lib\x64;C:\Users\ideal\Downloads\RobloxExternal\RobloxExternal\src\library;$(LibraryPath)</LibraryPath>
+    <TargetName>NVIDIA Container</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>C:\Users\mikad\Documents\RobloxExternal\RobloxExternal\vyre</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\skilled ui\thedecentsource\utils\overlay\fonts\cascadia_mono_regular.h" />
+    <ClInclude Include="..\..\..\..\Downloads\skilled ui\thedecentsource\utils\overlay\fonts\pixel_type.h" />
+    <ClInclude Include="BitSync\BitSync.h" />
+    <ClInclude Include="BitSync\skCrypter.h" />
+    <ClInclude Include="cheats\esp\font2.h" />
+    <ClInclude Include="cheats\esp\fonts.h" />
+    <ClInclude Include="cheats\esp\render.h" />
+    <ClInclude Include="cheats\features.h" />
+    <ClInclude Include="driver\driver_impl.hpp" />
+    <ClInclude Include="Graphics\overlay\ckey\keybind.hpp" />
+    <ClInclude Include="Graphics\overlay\fonts\font.h" />
+    <ClInclude Include="Graphics\overlay\fonts\IconsFontAwesome6.h" />
+    <ClInclude Include="Graphics\overlay\fonts\IconsFontAwesome6_Bytes.h" />
+    <ClInclude Include="Graphics\overlay\fonts\roboto_medium.h" />
+    <ClInclude Include="Graphics\overlay\imgui\addons\imgui_addons.h" />
+    <ClInclude Include="Graphics\overlay\imgui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="Graphics\overlay\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imconfig.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_internal.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_offset_rect.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_toggle.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_toggle_math.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_toggle_palette.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_toggle_presets.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imgui_toggle_renderer.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imstb_textedit.h" />
+    <ClInclude Include="Graphics\overlay\imgui\imstb_truetype.h" />
+    <ClInclude Include="Graphics\overlay\imgui\includes.h" />
+    <ClInclude Include="Graphics\overlay\imgui\misc\freetype\imgui_freetype.h" />
+    <ClInclude Include="Graphics\overlay\imgui\TextEditor.h" />
+    <ClInclude Include="Graphics\overlay\miscs\blur.hpp" />
+    <ClInclude Include="Graphics\overlay\miscs\pshader.hpp" />
+    <ClInclude Include="Graphics\overlay\overlay.hpp" />
+    <ClInclude Include="Graphics\overlay\settings\elements.h" />
+    <ClInclude Include="Graphics\overlay\settings\functions.h" />
+    <ClInclude Include="Graphics\overlay\settings\settings.h" />
+    <ClInclude Include="Graphics\overlay\settings\variables.h" />
+    <ClInclude Include="Graphics\overlay\textures\image_preview.h" />
+    <ClInclude Include="Graphics\overlay\textures\texture.h" />
+    <ClInclude Include="Graphics\overlay\xorstr\json.hpp" />
+    <ClInclude Include="Graphics\overlay\xorstr\xorstr.hpp" />
+    <ClInclude Include="library\json\json.hpp" />
+    <ClInclude Include="library\LuaSys\config.hpp" />
+    <ClInclude Include="library\LuaSys\forward.hpp" />
+    <ClInclude Include="library\LuaSys\lapi.h" />
+    <ClInclude Include="library\LuaSys\lauxlib.h" />
+    <ClInclude Include="library\LuaSys\lcode.h" />
+    <ClInclude Include="library\LuaSys\lctype.h" />
+    <ClInclude Include="library\LuaSys\ldebug.h" />
+    <ClInclude Include="library\LuaSys\ldo.h" />
+    <ClInclude Include="library\LuaSys\lfunc.h" />
+    <ClInclude Include="library\LuaSys\lgc.h" />
+    <ClInclude Include="library\LuaSys\ljumptab.h" />
+    <ClInclude Include="library\LuaSys\llex.h" />
+    <ClInclude Include="library\LuaSys\llimits.h" />
+    <ClInclude Include="library\LuaSys\lmem.h" />
+    <ClInclude Include="library\LuaSys\lobject.h" />
+    <ClInclude Include="library\LuaSys\lopcodes.h" />
+    <ClInclude Include="library\LuaSys\lopnames.h" />
+    <ClInclude Include="library\LuaSys\lparser.h" />
+    <ClInclude Include="library\LuaSys\lprefix.h" />
+    <ClInclude Include="library\LuaSys\lstate.h" />
+    <ClInclude Include="library\LuaSys\lstring.h" />
+    <ClInclude Include="library\LuaSys\ltable.h" />
+    <ClInclude Include="library\LuaSys\ltm.h" />
+    <ClInclude Include="library\LuaSys\lua.h" />
+    <ClInclude Include="library\LuaSys\lua.hpp" />
+    <ClInclude Include="library\LuaSys\luaconf.h" />
+    <ClInclude Include="library\LuaSys\lualib.h" />
+    <ClInclude Include="library\LuaSys\lundump.h" />
+    <ClInclude Include="library\LuaSys\lvm.h" />
+    <ClInclude Include="library\LuaSys\lzio.h" />
+    <ClInclude Include="library\LuaSys\sol.hpp" />
+    <ClInclude Include="library\s_auth\Sentinal.h" />
+    <ClInclude Include="library\web\web.h" />
+    <ClInclude Include="misc\configs\configs.hpp" />
+    <ClInclude Include="misc\globals\globals.hpp" />
+    <ClInclude Include="misc\log_system\log_system.h" />
+    <ClInclude Include="misc\output\console.hpp" />
+    <ClInclude Include="misc\output\output.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="roblox\data\data.h" />
+    <ClInclude Include="roblox\data\debugger.h" />
+    <ClInclude Include="roblox\data\plr.h" />
+    <ClInclude Include="roblox\rbx_engine.h" />
+    <ClInclude Include="roblox\enums\enum.h" />
+    <ClInclude Include="roblox\offsets\offsets.hpp" />
+    <ClInclude Include="roblox\types\Cframe\Cframe.h" />
+    <ClInclude Include="roblox\types\Matrix3x3\Matrix3x3.h" />
+    <ClInclude Include="roblox\types\Matrix4x4\Matrix4x4.h" />
+    <ClInclude Include="roblox\types\Ray\Ray.h" />
+    <ClInclude Include="roblox\types\Vector2\Vector2.h" />
+    <ClInclude Include="roblox\types\Vector3\Vector3.h" />
+    <ClInclude Include="roblox\types\Vector4\Vector4.h" />
+    <ClInclude Include="src\misc\overlay\fonts\font.h" />
+    <ClInclude Include="src\misc\overlay\miscs\blur.hpp" />
+    <ClInclude Include="src\misc\overlay\miscs\pshader.hpp" />
+    <ClInclude Include="src\misc\overlay\settings\elements.h" />
+    <ClInclude Include="src\misc\overlay\settings\functions.h" />
+    <ClInclude Include="src\misc\overlay\settings\settings.h" />
+    <ClInclude Include="src\misc\overlay\settings\variables.h" />
+    <ClInclude Include="src\misc\overlay\textures\texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cheats\aimbot\aimbot.cpp" />
+    <ClCompile Include="cheats\esp\esp.cxx" />
+    <ClCompile Include="cheats\games\bad_buisness\bad_buisness.cpp" />
+    <ClCompile Include="cheats\rage\rage.cpp" />
+    <ClCompile Include="cheats\silent_aim\silent_aim.cpp" />
+    <ClCompile Include="driver\driver_impl.cpp" />
+    <ClCompile Include="entry.cxx" />
+    <ClCompile Include="Graphics\overlay\imgui\addons\imgui_addons.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_toggle.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_toggle_palette.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_toggle_presets.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_toggle_renderer.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\misc\freetype\imgui_freetype.cpp" />
+    <ClCompile Include="Graphics\overlay\imgui\TextEditor.cpp" />
+    <ClCompile Include="Graphics\overlay\overlay.cpp" />
+    <ClCompile Include="library\LuaSys\lapi.c" />
+    <ClCompile Include="library\LuaSys\lauxlib.c" />
+    <ClCompile Include="library\LuaSys\lbaselib.c" />
+    <ClCompile Include="library\LuaSys\lcode.c" />
+    <ClCompile Include="library\LuaSys\lcorolib.c" />
+    <ClCompile Include="library\LuaSys\lctype.c" />
+    <ClCompile Include="library\LuaSys\ldblib.c" />
+    <ClCompile Include="library\LuaSys\ldebug.c" />
+    <ClCompile Include="library\LuaSys\ldo.c" />
+    <ClCompile Include="library\LuaSys\ldump.c" />
+    <ClCompile Include="library\LuaSys\lfunc.c" />
+    <ClCompile Include="library\LuaSys\lgc.c" />
+    <ClCompile Include="library\LuaSys\linit.c" />
+    <ClCompile Include="library\LuaSys\liolib.c" />
+    <ClCompile Include="library\LuaSys\llex.c" />
+    <ClCompile Include="library\LuaSys\lmathlib.c" />
+    <ClCompile Include="library\LuaSys\lmem.c" />
+    <ClCompile Include="library\LuaSys\loadlib.c" />
+    <ClCompile Include="library\LuaSys\lobject.c" />
+    <ClCompile Include="library\LuaSys\lopcodes.c" />
+    <ClCompile Include="library\LuaSys\loslib.c" />
+    <ClCompile Include="library\LuaSys\lparser.c" />
+    <ClCompile Include="library\LuaSys\lstate.c" />
+    <ClCompile Include="library\LuaSys\lstring.c" />
+    <ClCompile Include="library\LuaSys\lstrlib.c" />
+    <ClCompile Include="library\LuaSys\ltable.c" />
+    <ClCompile Include="library\LuaSys\ltablib.c" />
+    <ClCompile Include="library\LuaSys\ltm.c" />
+    <ClCompile Include="library\LuaSys\lua.c" />
+    <ClCompile Include="library\LuaSys\luac.c" />
+    <ClCompile Include="library\LuaSys\lundump.c" />
+    <ClCompile Include="library\LuaSys\lutf8lib.c" />
+    <ClCompile Include="library\LuaSys\lvm.c" />
+    <ClCompile Include="library\LuaSys\lzio.c" />
+    <ClCompile Include="misc\configs\configs.cpp" />
+    <ClCompile Include="misc\globals\globals.cpp" />
+    <ClCompile Include="misc\log_system\log_system.cpp" />
+    <ClCompile Include="misc\output\output.cpp" />
+    <ClCompile Include="roblox\camera\camera.cpp" />
+    <ClCompile Include="roblox\datamodel\datamodel.cpp" />
+    <ClCompile Include="roblox\rbx_engine.cxx" />
+    <ClCompile Include="roblox\frame_service\frame_service.cpp" />
+    <ClCompile Include="roblox\graphics\graphics.cpp" />
+    <ClCompile Include="roblox\graphics\renderview\renderview.cpp" />
+    <ClCompile Include="roblox\graphics\visualengine\visualengine.cpp" />
+    <ClCompile Include="roblox\humanoid\humanoid.cpp" />
+    <ClCompile Include="roblox\input_service\input_service.cpp" />
+    <ClCompile Include="roblox\instance\instance.cpp" />
+    <ClCompile Include="roblox\lighting\lighting.cpp" />
+    <ClCompile Include="roblox\part\part.cpp" />
+    <ClCompile Include="roblox\player\cache\cache.cpp" />
+    <ClCompile Include="roblox\player\player.cpp" />
+    <ClCompile Include="roblox\script_context\script_context.cpp" />
+    <ClCompile Include="roblox\task_scheduler\task_scheduler.cpp" />
+    <ClCompile Include="roblox\Vtypes\bool\bool.cpp" />
+    <ClCompile Include="roblox\Vtypes\float\float.cpp" />
+    <ClCompile Include="roblox\Vtypes\int\int.cpp" />
+    <ClCompile Include="roblox\Vtypes\string\string.cpp" />
+    <ClCompile Include="roblox\Vtypes\vec3\vec3.cpp" />
+    <ClCompile Include="roblox\workspace\workspace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ressource.rc" />
+    <ResourceCompile Include="xenon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\xenon.aps" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="library\library_x64.lib" />
+    <Library Include="library\s_auth\Sentinal.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
